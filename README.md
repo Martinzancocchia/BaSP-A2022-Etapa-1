@@ -15,7 +15,7 @@ Se adjunta archivo index.html basado en la landing page del proyecto de figma (h
 
 EN-US
 To enter the html file follow these steps:
--Open the repository folder "BaSP-A2022-Stage-1" named "Week-01".
+-Open the repository "BaSP-A2022-Etapa-1" the folder named "Semana-01".
      -There you will find the "index.html" file with its respective commits.
 
 Attached is an index.html file based on the landing page of the figma project (https://www.figma.com/file/2t7XPyK3dineUQt2Coyxj6/UI-kit-RR-(BaSP)-A).
