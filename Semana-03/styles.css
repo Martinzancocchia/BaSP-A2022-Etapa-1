@@ -67,7 +67,7 @@ aside h3 {
   height: 18px;
   left: 17px;
   top: 454px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 
   font-weight: 700;
   font-size: 15px;
@@ -112,6 +112,7 @@ nav li {
   margin-top: 21px;
   padding-top: 12px;
   width: 100%;
+  padding-right: 12px;
   height: 50px;
   box-sizing: border-box;
   box-shadow: inset;
@@ -125,6 +126,7 @@ nav li {
 .info {
   margin-top: 300px;
 }
+
 .info li {
   margin-top: 15px;
   padding-top: 9px;
@@ -134,10 +136,9 @@ nav li {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
 
-  border-bottom: 1px solid #AACE9B;
-
+  border-bottom: 1px solid #aace9b;
 }
 
 main,
@@ -238,7 +239,6 @@ footer {
   margin-left: 20px;
 }
 
-
 .features-container h3 {
   width: 65%;
   height: 35px;
@@ -285,10 +285,16 @@ footer {
 .block-2 {
   float: left;
   width: 50%;
-  height: 379px;
+  height: 330px;
   box-sizing: border-box;
   border-bottom: 3px solid #373867;
   margin-top: auto;
+}
+
+.arrow-container {
+  float: left;
+  width: 10%;
+  box-sizing: border-box;
 }
 
 .block-2 h3 {
@@ -309,7 +315,7 @@ footer {
   width: 436px;
   height: 46px;
   margin-bottom: 50px;
-  padding-left: 30px;
+  padding-left: 75px;
 
   font-weight: 400;
   font-size: 20px;
@@ -423,7 +429,7 @@ footer {
 }
 .block-4 p {
   position: inherit;
-  width: 100%;
+  width: 95%;
   height: 90px;
   margin-bottom: 60px;
 
@@ -439,7 +445,6 @@ footer {
   width: 33.3%;
   box-sizing: border-box;
   margin-top: 100px;
-  margin-top: 53px;
 }
 
 .block-5 h3 {
@@ -447,8 +452,10 @@ footer {
   height: 47px;
   border-top: 3px solid #373867;
   padding-top: 53px;
+  padding-left: 70px;
   margin-top: 53px;
   margin-bottom: 28px;
+  box-sizing: border-box;
 
   font-weight: 700;
   font-size: 40px;
@@ -458,9 +465,10 @@ footer {
 }
 
 .block-5 li {
-  width: 73px;
-  height: 100%;
+  width: 100%;
   padding-top: 50px;
+  box-sizing: border-box;
+  padding-left: 43px;
 
   font-weight: 700;
   font-size: 15px;
@@ -469,12 +477,19 @@ footer {
 
   color: #373867;
 }
+.block-5 .items {
+  float: left;
+  width: 32px;
+  height: 20px;
+  box-sizing: border-box;
+  margin-bottom: 38px;
+  margin-left: 20px;
+}
 
 footer {
   width: 85%;
   position: relative;
   background: #41426f;
-
 }
 
 .block-6 {
