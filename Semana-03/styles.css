@@ -30,8 +30,8 @@ header {
 header h1 {
   position: absolute;
   width: 199px;
-  left: 32px;
-  top: 36px;
+  left: 40px;
+  top: 50px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -49,6 +49,7 @@ aside {
   padding-left: 17px;
   padding-right: 17px;
   background: #41426f;
+  z-index: 10;
 }
 
 aside h2 {
@@ -115,12 +116,21 @@ nav li {
   padding-right: 12px;
   height: 50px;
   box-sizing: border-box;
-  box-shadow: inset;
 
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   text-align: center;
+}
+
+nav a {
+  width: 255px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.info ul a{
+  color: white;
 }
 
 .info {
@@ -328,19 +338,24 @@ footer {
   width: 572px;
   height: 466px;
   display: inline-block;
-  margin-left: 400px;
-  padding-top: 10px;
-  margin-bottom: 33px;
+  margin-left: 280px;
+  margin-top: 7px;
+  margin-bottom: 40px;
 
   background: #aace9b;
   border-radius: 20px;
-  padding: 10px 12px;
+  padding: 0px 12px 0px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #373867;
 }
 
 .contact-form .form-group {
   display: inline-block;
-  width: 260px;
-  padding-left: 22px;
+  width: 49%;
+  height: 37px;
   margin-top: 19px;
   margin-bottom: 18px;
 }
@@ -351,25 +366,41 @@ footer {
 
 .contact-form .form-group input {
   display: block;
-  width: 260px;
+  width: 100%;
   height: 37px;
-}
-
-.contact-form .form-group1 {
-  width: 530px;
-  height: 60px;
-  padding-left: 22px;
-  margin-bottom: 100px;
-}
-
-.contact-form .form-group1 label {
-  display: block;
-}
-
-.contact-form .form-group1 input {
-  display: block;
-  width: 260px;
   height: 37px;
+  left: 0%;
+  right: 0%;
+  top: 23px;
+
+  border: 1px solid #373867;
+  border-radius: 4px;
+}
+
+.contact-form select {
+  height: 37px;
+  width: 98.5%;
+  display: block;
+  margin-bottom: 64px;
+
+}
+
+.contact-form textarea {
+  height: 160px;
+  width: 98.5%;
+  display: block;
+  margin-bottom: 20px ;
+}
+
+.contact-form #summit {
+  margin-bottom: 20px;
+  width: 48.5%;
+  height: 50px;
+  margin-left: 50%;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 .block-3-1 {
@@ -443,6 +474,7 @@ footer {
 .block-5 {
   float: left;
   width: 33.3%;
+  height: 80%;
   box-sizing: border-box;
   margin-top: 100px;
 }
@@ -469,6 +501,7 @@ footer {
   padding-top: 50px;
   box-sizing: border-box;
   padding-left: 43px;
+  border-left: 3px solid #373867;
 
   font-weight: 700;
   font-size: 15px;
@@ -488,15 +521,11 @@ footer {
 
 footer {
   width: 85%;
+  height: 140px;
   position: relative;
   background: #41426f;
-}
-
-.block-6 {
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid salmon;
-  align-self: center;
+  padding: 0%;
+  align-items: center;
 
   font-size: 15px;
   line-height: 18px;
@@ -505,9 +534,27 @@ footer {
   color: #ffffff;
 }
 
-.block-7 {
-  float: left;
-  width: 33.3%;
-  box-sizing: border-box;
-  border: 1px solid salmon;
+footer ul {
+  align-items: center;
+  width: 100%;
+}
+
+footer li {
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+footer p {
+  margin-top: 39px;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
 }
