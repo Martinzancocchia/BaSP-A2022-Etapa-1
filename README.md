@@ -22,7 +22,7 @@ To enter the html file follow these steps:
 -Open the repository "BaSP-A2022-Etapa-1" the folder named "Semana-01".
      -There you will find the "index.html" file with its respective commits.
 
-To enter the html file follow these steps:
+To enter the html file and its style sheet follow these steps:
 -Open the repository "BaSP-A2022-Etapa-1" the folder named "Semana-03".
      -There you will find the "index.html" and "styles.css" files with they respective commits.
 
