@@ -10,11 +10,17 @@
         <link rel="stylesheet" href="Styles/sidebar.css">
         <link rel="stylesheet" href="Styles/main.css">
         <link rel="stylesheet" href="Styles/footer.css">
+        <link rel="stylesheet" href="Styles/reset.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     </head>
     <body>
         <header>
             <h1>Trackgenix</h1>
+            <div class="burger-menu">
+                <span>
+                    <a href="#"><img src="assets/icons/icons8-menú-redondeado-50.png" alt="menu"></a>
+                </span>
+            </div>
         </header>
         <Aside>
             <h2>Menu</h2>
@@ -50,8 +56,8 @@
             </div>
         </Aside>
         <main>
-            <section>
-                <div class="trackgenix">
+            <section class="Trackgenix">
+                <div>
                     <h2>
                         TRACKGENIX
                     </h2>
@@ -59,21 +65,19 @@
                         TRACKGENIX
                     </h3>
                     <p>
-                        Trackgenix software provides businesses with a number of advantages and benefits. One of the most significant advantages of using Trackgenix is that it helps businesses to save time and increase productivity.
-                        By tracking employee time and project progress, businesses can identify areas where improvements can be made.
+                        Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.
                     </p>
+                </div>
+                <div>
+                    <img class="img-1" src="assets/img/Imagen-3.png" alt="img-1">
                     <button class="learn-more" name="button">Learn more</button>
                 </div>
-                <div class="trackgenix-2">
-                    <img class="img-1" src="assets/img/Imagen-3.png" alt="img-1">
-                </div>
             </section>
             <section>
-                <div class="features-container">
-                    <ul>
-                        <li>
-                            <img class="features-container-icons" src="assets/icons/alert-icon-icon.png" alt="alert-icon">
-                            <h3>Reports</h3>
+                <div class="features-conteiner"></div>
+                    <div class="block">
+                        <img class="features-container-icons" src="assets/icons/alert-icon-icon.png" alt="alert-icon">
+                        <h3>Reports</h3>
                             <p>
                                 Tellus tesque eu tincidunt tortor aliquam nulla. Vitae congue mauris rhoncus aenean vel elit
                                 scelerisque mauris.
@@ -82,10 +86,10 @@
                                 Vitae semper quis lectus nulla. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Quis
                                 blandit turpis cursus in hac.
                             </p>
-                        </li>
-                        <li>
-                            <img class="features-container-icons" src="assets/icons/alarm-icon-icon.png" alt="alert-icon">
-                            <h3>Time registration</h3>
+                        </div>
+                    <div class="block">
+                        <img class="features-container-icons" src="assets/icons/alarm-icon-icon.png" alt="alert-icon">
+                        <h3>Time registration</h3>
                             <p>
                                 Tellus tesque eu tincidunt tortor aliquam nulla. Vitae congue mauris rhoncus aenean vel elit
                                 scelerisque mauris.
@@ -94,14 +98,10 @@
                                 Vitae semper quis lectus nulla. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Quis
                                 blandit turpis cursus in hac.
                             </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="features-container">
-                    <ul>
-                        <li>
-                            <img class="features-container-icons" src="assets/icons/tags-icon-icon.png" alt="alert-icon">
-                            <h3>Resourse management</h3>
+                    </div>
+                    <div class="block">
+                        <img class="features-container-icons" src="assets/icons/tags-icon-icon.png" alt="alert-icon">
+                        <h3>Resourse management</h3>
                             <p>
                                 Tellus tesque eu tincidunt tortor aliquam nulla. Vitae congue mauris rhoncus aenean vel elit
                                 scelerisque mauris.
@@ -110,10 +110,10 @@
                                 Vitae semper quis lectus nulla. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Quis
                                 blandit turpis cursus in hac.
                             </p>
-                        </li>
-                        <li>
-                            <img class="features-container-icons" src="assets/icons/tags-icon-icon.png" alt="alert-icon">
-                            <h3>Multiple roles</h3>
+                    </div>
+                    <div class="block">
+                        <img class="features-container-icons" src="assets/icons/tags-icon-icon.png" alt="alert-icon">
+                        <h3>Multiple roles</h3>
                             <p>
                                 Tellus tesque eu tincidunt tortor aliquam nulla. Vitae congue mauris rhoncus aenean vel elit
                                 scelerisque mauris.
@@ -122,11 +122,9 @@
                                 Vitae semper quis lectus nulla. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Quis
                                 blandit turpis cursus in hac.
                             </p>
-                        </li>
-                    </ul>
-                </div>
+                    </div>
             </section>
-            <section>
+            <section class="specs-conteiner">
                 <div class="specs-title">
                     <h2>
                         Why use TRACKGENIX?
@@ -135,16 +133,20 @@
                 <div class="specs">
                     <ul>
                         <li>
-                            <img class="arrow-container" src="assets/icons/flecha.png" alt="flecha">
-                            <h3>Productivity booster</h3>
-                            <p>
+                            <div class="block-2">
+                                <img class="arrow-container" src="assets/icons/flecha.png" alt="flecha">
+                                <h3>Productivity booster</h3>
+                            </div>
+                           <p>
                                 The strict way of working and performing
                                 the jobs allow a good insertion in the labor world.
                             </p>
                         </li>
                         <li>
-                            <img class="arrow-container" src="assets/icons/flecha.png" alt="flecha">
-                            <h3>Work traceability</h3>
+                            <div class="block-2">
+                                <img class="arrow-container" src="assets/icons/flecha.png" alt="flecha">
+                                <h3>Work traceability</h3>
+                            </div>
                             <p>
                                 These processes facilitate and
                                 improve the management of work.
@@ -155,16 +157,20 @@
                 <div class="specs">
                     <ul>
                         <li>
-                            <img class="arrow-container" src="assets/icons/flecha.png" alt="flecha">
-                            <h3>Leadership and team management</h3>
+                            <div class="block-2">
+                                <img class="arrow-container" src="assets/icons/flecha.png" alt="flecha">
+                                <h3>Leadership and team management</h3>
+                            </div>
                             <p>
                                 Team Management is essential to establish a good
                                 quality of life at work and ensure good Project Management.
                             </p>
                         </li>
                         <li>
-                            <img class="arrow-container" src="assets/icons/flecha.png" alt="flecha">
-                            <h3>Decision making</h3>
+                            <div class="block-2">
+                                <img class="arrow-container" src="assets/icons/flecha.png" alt="flecha">
+                                <h3>Decision making</h3>
+                            </div>
                             <p>
                                 Is the process by which a choice is made between
                                 alternatives or ways to solve different life situations.
@@ -221,9 +227,11 @@
             </section>
             <section>
                 <div class="links">
-                    <h3>
-                        Products
-                    </h3>
+                    <div class="links-title">
+                        <h3>
+                            Products
+                        </h3>
+                    </div>
                     <ol>
                         <li>
                             <a href="#"><img class="items" src="assets/icons/flecha.png" alt="flecha">Functionalities</a></li>
@@ -239,9 +247,12 @@
                     </ol>
                 </div>
                 <div class="links">
-                    <h3>
-                        Company
-                    </h3>
+                    <div class="links-title">
+                        <h3>
+                            Company
+                        </h3>
+                    </div>
+                   
                     <ol>
                         <li>
                             <a href="#"><img class="items" src="assets/icons/flecha.png" alt="flecha">Abou us</a>
@@ -258,9 +269,12 @@
                     </ol>
                 </div>
                 <div class="links">
-                    <h3>
-                        Support
-                    </h3>
+                    <div class="links-title">
+                        <h3>
+                            Support
+                        </h3>
+                    </div>
+                    
                     <ol>
                         <li>
                             <a href="#"><img class="items" src="assets/icons/flecha.png" alt="flecha">Help</a>
