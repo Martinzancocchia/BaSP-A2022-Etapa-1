@@ -23,16 +23,6 @@ aside {
 }
 
 @media only screen and (min-width: 768px) {
-  .links-products,
-.links-company,
-.links-support {
-  padding: 0 22px 0 22px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-grow: 10;
-  width: 200px;
-}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -47,16 +37,5 @@ aside {
   .burger-menu {
     display: none;
   }
-
-  .links-products,
-.links-company,
-.links-support {
-  padding: 0 22px 0 22px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-grow: 10;
-  width: 200px;
-}
 
 }

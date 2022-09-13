@@ -3,7 +3,7 @@ footer {
   padding-bottom: 10px;
   background-color: #41426f;
   align-items: center;
-  margin-bottom: 0;
+  bottom: 0;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -13,6 +13,7 @@ footer {
     margin-left: 20%;
     background-color: #41426f;
     align-items: center;
+    bottom: 0;
   }
 }
 
