@@ -6,17 +6,24 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
-  .Trackgenix {
+  .pepe {
+    display: flex;
     flex-direction: row;
-    flex: 0 1 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .Trackgenix .t1 {
     width: 40%;
+    padding-right: 20px;
   }
 
   .Trackgenix .t2 {
     width: 60%;
+  }
+
+  .Trackgenix .learn-more {
+    margin-top: 20px;
   }
 }
 
@@ -54,7 +61,7 @@ main {
 }
 
 .Trackgenix .img-1 {
-  margin: 50px 0 0 0;
+  margin: 10px 0 0 0;
   width: 100%;
 }
 
@@ -62,6 +69,7 @@ main {
   width: 147px;
   height: 47px;
   margin-right: 8px;
+  margin-top: 10px;
   background-color: #ffffff;
   border-radius: 5px;
   font-size: 15px;
@@ -102,21 +110,27 @@ main {
   font-weight: 400px;
   color: #373867;
 }
-
-.specs-conteiner {
-  display: flex;
-  flex-direction: column;
+.specs-section {
   padding: 50px 0 50px 0;
   border-bottom: 3px solid #373867;
 }
-
-.specs-conteiner .specs {
+.specs-conteiner {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-grow: 100;
 }
 
-.specs-conteiner h2 {
-  width: 190px;
+.specs-conteiner .specs {
+  width: 330px;
+  margin: 0 0 35px 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #373867;
+}
+
+.specs-section h2 {
+  width: 330px;
   font-weight: 600;
   font-size: 30px;
   padding: 0 0 7px 0;
@@ -127,16 +141,10 @@ main {
 
 .specs-conteiner h3 {
   margin: 50px 0 0 50px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #41426f;
-}
-
-.specs-conteiner ul {
-  margin: 0 0 0 20px;
-  font-size: 24px;
-  font-weight: 400;
-  color: #373867;
+  width: 310px;
 }
 
 .specs-conteiner p {
@@ -146,7 +154,7 @@ main {
 }
 
 .specs-conteiner img {
-  margin: 0 0 -87px 0;
+  margin: 0 0 -84px 0;
 }
 
 .form-section {
@@ -239,6 +247,7 @@ input,
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 10;
 }
 
 .links h3 {
