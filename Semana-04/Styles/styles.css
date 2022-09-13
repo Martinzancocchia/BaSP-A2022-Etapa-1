@@ -23,9 +23,32 @@ aside {
 }
 
 @media only screen and (min-width: 768px) {
+  .links-company, .links-support, .links-products{
+    flex-basis: 30%;
+  }
+
+  .pepe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .Trackgenix .t1 {
+    width: 40%;
+    padding-right: 20px;
+  }
+
+  .Trackgenix .t2 {
+    width: 60%;
+  }
+
+  .Trackgenix .learn-more {
+    margin-top: 20px;
+  }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   aside {
     display: initial;
   }
@@ -38,4 +61,40 @@ aside {
     display: none;
   }
 
+  .pepe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .Trackgenix .t1 {
+    width: 40%;
+    padding-right: 20px;
+  }
+
+  .Trackgenix .t2 {
+    width: 60%;
+  }
+
+  .Trackgenix .learn-more {
+    margin-top: 20px;
+  }
+
+  .form-section{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about .about-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .about p {
+    font-size: 25px;
+  }
 }

@@ -5,28 +5,6 @@ main {
   background-color: #ffffff;
 }
 
-@media only screen and (min-width: 1024px) {
-  .pepe {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .Trackgenix .t1 {
-    width: 40%;
-    padding-right: 20px;
-  }
-
-  .Trackgenix .t2 {
-    width: 60%;
-  }
-
-  .Trackgenix .learn-more {
-    margin-top: 20px;
-  }
-}
-
 .Trackgenix {
   display: flex;
   flex-direction: column;
@@ -63,6 +41,7 @@ main {
 .Trackgenix .img-1 {
   margin: 10px 0 0 0;
   width: 100%;
+  border-radius: 15px;
 }
 
 .Trackgenix .learn-more {
@@ -161,11 +140,6 @@ main {
   margin: 0 0 -84px 0;
 }
 
-.form-section {
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -224,18 +198,19 @@ input,
 }
 
 .about-1 p {
-  color: #373867;
-  font-size: 20px;
-  line-height: 28px;
   width: 35%;
+  font-size: 20px;
+  line-height: 30px;
+  color: #373867;
 }
 
 .about h2 {
-  font-size: 30px;
-  color: #373867;
-  font-weight: 700;
   margin-top: 20px;
   margin-bottom: 15px;
+  font-size: 30px;
+
+  font-weight: 700;
+  color: #373867;
 }
 
 .about img {
@@ -246,7 +221,7 @@ input,
 
 .about-2 {
   color: #373867;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .links {
@@ -261,7 +236,7 @@ input,
 .links-products,
 .links-company,
 .links-support {
-  width: 200px;
+  width: 420px;
   padding: 0 22px 0 22px;
   display: flex;
   flex-direction: column;
