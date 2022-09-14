@@ -94,8 +94,9 @@ nav a {
   color: white;
 }
 
+
 .info {
-  margin-top: 300px;
+  margin-top: 60%;
 }
 
 .info li {
@@ -103,6 +104,8 @@ nav a {
   padding-top: 9px;
   padding-bottom: 9px;
   width: 100%;
+  align-content: center;
+  justify-content: center;
 
   font-weight: 700;
   font-size: 14px;
