@@ -18,14 +18,16 @@ footer {
 }
 
 footer ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px 25%;
-    text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 25%;
+  text-align: center;
 }
 
 footer li {
-padding-top: 15px;
+  padding-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
   display: flex;
   justify-content: space-evenly;
   text-align: center;

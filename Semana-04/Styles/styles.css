@@ -29,10 +29,9 @@ aside {
     flex-basis: 30%;
   }
 
-  .pepe {
+  .Trackgenix-conteiner {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
@@ -63,7 +62,7 @@ aside {
     display: none;
   }
 
-  .pepe {
+  .Trackgenix-conteiner {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

@@ -2,26 +2,50 @@ console.log("For")
 
 //5-a)
 
+console.log('5-a) ');
+
 var carBrands = ["nissan", "toyota", "volkswagen", "ford", "chevrolet"];
-for(i = 0; i < 5; i++)
-    {
-        alert(carBrands[i]);
-    }
-console.log("5-a) Car brands: " + carBrands);
+for (let i = 0; i < carBrands.length; i++) {
+    alert('ex05-a: ' + carBrands[i]);
+    
+  }
+  console.log('');
 
 //5-b)
 
-var carBrandsB = [];
-for (i=0; i<5; i++)
-    {
-        if(carBrands[i].substring(0,1) != carBrands[i].substring(0,1).toUpperCase)
-            {
-                carBrandsB[i] = carBrands[i].substring(0,1).toUpperCase() + carBrands[i].substring(1).toLowerCase();
-                alert(carBrandsB[i]);
-            }
-        else
-            {
-            carBrands[i] = carBrandsB[i];
-            }
-    }
-console.log("5-b) Car brands: " + carBrandsB);
+console.log('5-b) ');
+
+for (let i = 0; i < carBrands.length; i++) {
+  carBrands[i] =
+    carBrands[i].substring(0, 1).toUpperCase() +
+    carBrands[i].substring(1, carBrands[i].length);
+  alert('5-b) ' + carBrands[i]);
+}
+console.log('');
+
+//5-c)
+
+console.log('5-c) ');
+
+var sentence = '';
+
+for (let i = 0; i < carBrands.length; i++) { 
+  sentence = sentence + carBrands[i];
+}
+alert('5-c) sentence: '+ sentence);
+console.log('');
+
+
+//5-d)
+
+console.log('5-d) ');
+
+var numbers = [];
+
+for (let i = 0; i < 10; i++) { 
+  numbers[i] = i;
+}
+
+console.log('numbers: ', numbers);
+console.log('');
+console.log('');
