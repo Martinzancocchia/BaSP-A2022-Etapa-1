@@ -6,7 +6,7 @@ console.log('5-a) ');
 
 var carBrands = ["nissan", "toyota", "volkswagen", "ford", "chevrolet"];
 for (let i = 0; i < carBrands.length; i++) {
-    alert('ex05-a: ' + carBrands[i]);
+    alert('5-a) ' + carBrands[i]);
     
   }
   console.log('');

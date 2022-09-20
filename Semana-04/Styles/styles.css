@@ -18,11 +18,25 @@ a:active {
   text-decoration-color: none;
 }
 
+.flex-conteiner {
+  display: flex;
+  height: 100%;
+}
+
+.main-footer-conteiner{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
 aside {
   display: none;
 }
 
+
+
 @media only screen and (min-width: 768px) {
+
   .links-company,
   .links-support,
   .links-products {
@@ -54,9 +68,9 @@ aside {
     display: initial;
   }
 
-  main {
+  /* main {
     margin-left: 20%;
-  }
+  } */
 
   .burger-menu {
     display: none;

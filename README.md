@@ -1,78 +1,59 @@
-██▓▒░ ►▬ WELCOME / BIENVENIDO ▬◄ ░▒▓██
+# BaSP-2022-Etapa-1
 
-#BaSP
+An HTML layout inspired by the landing page of Trackgenix, based on a Figma prototype.
 
+## Getting Started
 
-▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃ NUEVA VERSION ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
-version: 1.0.4 (Semana-4)
+### Prerequisites
 
-ES-AR
-DISPONIBLE PARA MOVIL, TABLET Y PC!
+- Windows
 
+- [Chrome](https://www.google.com/chrome/browser/desktop/)
 
-En esta nueva version se aplica responsive web design mediante el uso flexbox y media-querys.
+- [Git](https://git-scm.com/downloads)
 
-Asi mismo todos los archivos estan dentro de la carpeta semana-04 (index.html y carpeta con las hojas de estilo)
+- Any CLI (cmd, Git Bash, Powershell)
 
-La misma fue entregada mediante el uso de GitHub Pages hosteando el proyecto en el mismo, cuyo link es el siguiente:
+### Executing program
 
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+- Clone the repo.
 
-https://martinzancocchia.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
+```
+git clone https://github.com/Martinzancocchia/BaSP-A2022-Etapa-1
+```
 
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+- Go to the repo folder in file explorer.
 
-▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃ NEW VERSION ▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
-version: 1.0.4 (Semana-4)
+- Open /Semana-XX/index.html file with Chrome. (XX is the week number, i.e. 02)
 
-EN-US
-AVAILABLE FOR MOBILE, TABLET AND PC!
+## Change Log
 
+### Semana 05
 
-In this new version, responsive web design is applied through the use of flexbox and media-queries.
+Add Javascript exercises.
+[Check it out](https://github.com/Martinzancocchia/BaSP-A2022-Etapa-1/tree/main/Semana-05)
 
-Likewise, all the files are inside the folder Semana-04 (index.html and folder with the style sheets)
+### Semana 04
 
-It was delivered through the use of GitHub Pages hosting the project in it, whose link is:
+Add styles to the HTML layout now using Flexbox.
+See [Live demo.](https://martinzancocchia.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html)
 
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+### Semana 03
 
-https://martinzancocchia.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
+Add styles to the HTML layout without Flexbox.
 
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+### Semana 02
 
-▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃
+Create HTML layout based on Figma prototype.
 
-version: 1.0.2 (Semana-2)
-ES-AR
-Para ingresar al archivo html siga los siguientes pasos:
--Abra la carpeta del repositorio "BaSP-A2022-Etapa-1" llamada "Semana-01".
-    -Alli encontrara el archivo "index.html" con sus respectivos commits.
+### Semana 01
 
-version: 1.0.3 (Semana-3)
-Para ingresar al archivo html CORREGIDO y su hoja de CSS siga los siguientes pasos:
--Abra la carpeta del repositorio "BaSP-A2022-Etapa-1" llamada "Semana-03".
-    -Alli encontrara los archivos "index.html" y "styles.css" con sus respectivos commits.
+Create repo and set up the project.
 
-Se adjunta archivo index.html y su hoja de estilos basados en la landing page del proyecto de figma (https://www.figma.com/file/2t7XPyK3dineUQt2Coyxj6/UI-kit-RR-(BaSP)-A).
-
-version: 1.0.2 (Semana-2)
-EN-US
-To enter the html file follow these steps:
--Open the repository "BaSP-A2022-Etapa-1" the folder named "Semana-01".
-     -There you will find the "index.html" file with its respective commits.
-
-version: 1.0.3 (Semana-3)
-To enter the html file and its style sheet follow these steps:
--Open the repository "BaSP-A2022-Etapa-1" the folder named "Semana-03".
-     -There you will find the "index.html" and "styles.css" files with they respective commits.
-
-Attached is an index.html and its styles sheet files based on the landing page of the figma project (https://www.figma.com/file/2t7XPyK3dineUQt2Coyxj6/UI-kit-RR-(BaSP)-A).
-
-
+## Author
 
 Ⓒ Martin Zancocchia
 
+Contact me!
 
 ༼ つ ◕_◕ ༽つ🍪 (Sorry for the long Readme, take a cookie).
-

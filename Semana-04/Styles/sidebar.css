@@ -1,6 +1,5 @@
 aside {
-  position: fixed;
-  width: 20%;
+  flex: 1 0 20%;
   height: 100%;
   margin-top: 120px;
   padding-left: 17px;
