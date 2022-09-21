@@ -29,6 +29,12 @@ a:active {
   overflow-y: auto;
 }
 
+body{
+  
+  overflow: hidden;
+  height: 100vh;
+}
+
 aside {
   display: none;
 }
@@ -40,7 +46,7 @@ aside {
   .links-company,
   .links-support,
   .links-products {
-    flex-basis: 30%;
+    max-width: 33%;
   }
 
   .Trackgenix-conteiner {
@@ -67,6 +73,7 @@ aside {
   aside {
     display: initial;
   }
+
 
   /* main {
     margin-left: 20%;
