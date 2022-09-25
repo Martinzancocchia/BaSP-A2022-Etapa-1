@@ -1,0 +1,155 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+main img{
+    display: flex;
+    margin: auto;
+}
+
+form h1 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.078px;
+    color: #373867;
+    padding-bottom: 20px;
+}
+
+.login-buttons-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-buttons-div button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 64px;
+    margin: auto 10px auto 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-buttons-div .signup-btn {
+    background: #49A37B;
+}
+
+.login-buttons-div .login-btn {
+    background: #41426F;
+}
+
+.login-buttons-div .btn:hover {
+    color: #41426F;
+    background: #FFFFFF;
+}
+input:focus-visible,
+input:focus {
+    border: 1px solid #41426F;
+
+}
+
+
+.form {
+	padding: 30px 40px;	
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 20px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+
+.color-blue{
+    border: 2px solid blue;
+}
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 45px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    margin-left: 10px;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.remember{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.forgot{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
