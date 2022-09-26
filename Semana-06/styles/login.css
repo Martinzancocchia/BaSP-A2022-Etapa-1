@@ -1,17 +1,17 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	background-color: #ffffff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
-	margin: 0;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-main img{
+main img {
     display: flex;
     margin: auto;
 }
@@ -63,6 +63,7 @@ form h1 {
     color: #41426F;
     background: #FFFFFF;
 }
+
 input:focus-visible,
 input:focus {
     border: 1px solid #41426F;
@@ -71,7 +72,7 @@ input:focus {
 
 
 .form {
-	padding: 30px 40px;	
+    padding: 30px 40px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
@@ -79,77 +80,73 @@ input:focus {
 
 
 .form-control {
-	margin-bottom: 10px;
-	padding-bottom: 20px;
-	position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
 }
 
 
 .form-control input {
-	border: 2px solid #f0f0f0;
-	border-radius: 20px;
-	display: block;
-	font-family: inherit;
-	font-size: 14px;
-	padding: 10px;
-	width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 20px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
 }
 
 .form-control input:focus {
-	outline: 0;
-	border-color: #777;
+    outline: 0;
+    border-color: #777;
 }
 
 
-.color-blue{
-    border: 2px solid blue;
-}
+
 .form-control.success input {
-	border-color: #2ecc71;
+    border-color: #2ecc71;
 }
 
 .form-control.error input {
-	border-color: #e74c3c;
+    border-color: #e74c3c;
 }
 
 .form-control i {
-	visibility: hidden;
-	position: absolute;
-	top: 45px;
-	right: 10px;
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    right: 10px;
 }
 
 .form-control.success i.fa-check-circle {
-	color: #2ecc71;
-	visibility: visible;
+    color: #2ecc71;
+    visibility: visible;
 }
 
 .form-control.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
+    color: #e74c3c;
+    visibility: visible;
 }
 
 .form-control small {
-	color: #e74c3c;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     margin-left: 10px;
-	visibility: hidden;
+    visibility: hidden;
 }
 
 .form-control.error small {
-	visibility: visible;
+    visibility: visible;
 }
 
-.remember{
+.remember {
     text-align: center;
     padding-bottom: 20px;
 }
 
-.forgot{
+.forgot {
     text-align: center;
     padding-bottom: 20px;
 }
-
-
