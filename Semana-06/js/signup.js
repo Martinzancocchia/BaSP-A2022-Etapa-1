@@ -218,7 +218,7 @@ window.onload = () => {
     var input = e.currentTarget;
     var hasSpace = false;
 
-    for (let i = 0; i < input.value.length; i++) {
+    for (var i = 0; i < input.value.length; i++) {
       if (i != 0 && i != input.value.length && input.value.charAt(i) == " ") {
         hasSpace = true;
       }
@@ -237,7 +237,7 @@ window.onload = () => {
 
   function validateCity(e) {
     if (
-      e.currentTarget.value.length < 3 ||
+      e.currentTarget.value.length < 4 ||
       !isAlphaNumeric(e.currentTarget.value)
     ) {
       createError(e.currentTarget);

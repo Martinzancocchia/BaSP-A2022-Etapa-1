@@ -2,19 +2,28 @@ window.onload = function () {
   let form = document.getElementById("form");
   let email = document.getElementById("email");
   let password = document.getElementById("password");
+  // var allInputs = document.querySelectorAll("input");
+
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    var emailValue = email.value;
+    var passwordValue = password.value;
+    alert(`email: ${emailValue}\npassword: ${passwordValue}`);
+
     checkInputs();
 
-    // handleLogin();
   });
 
-  // function handleLogin(e) {
+  // allInputs.forEach((input) => {
+  //   input.addEventListener("focus", removeError);
+  // });
+
+  // function LoginInfo() {
   //   e.preventDefault();
-  //   let email = emailValue.value;
-  //   let password = passwordValue.value;
+  //   var email = email.value;
+  //   var password = password.value;
   //   alert('email: ' + email + '\n' + 'password: ' + password);
   // }
 
@@ -98,6 +107,23 @@ window.onload = function () {
 };
 
 // function removeError(e) {
-//   email.classlist.remove("form-control error");
-//   password.classlist.remove("form-control error");
+//   var input = e.currentTarget;
+//   // remove error class
+//   input.classList.remove("form-control error");
+//   input.parentNode.classList.remove("form-control error");
+
+//   // remove error message if exist
+//   var errorElement = input.parentElement.querySelector(
+//     `#error-${input.name}`
+//   );
+//   if (errorElement) {
+//     errorElement.remove();
+//   }
+//   // remove error from array
+//   for (var i = 0; i < errors.length; i++) {
+//     if (errors[i] == `The ${input.name} is not valid`) {
+//       errors.splice(i, 1);
+//       i--;
+//     }
+//   }
 // }

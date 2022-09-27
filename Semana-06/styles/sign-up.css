@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+a{
+  color: #ffffff;
+}
+
 .sign-up {
   background-color: #ffffff;
   display: flex;
