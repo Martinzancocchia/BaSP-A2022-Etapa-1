@@ -1,6 +1,13 @@
+function formatDateToApi(date) {
+  let dateArray = date.split('-');
+  return dateArray[1] + '/' + dateArray[2] + '/' + dateArray[0];
+}
+function formatDateFromApi(date) {
+  let dateArray = date.split('/');
+  return dateArray[2] + '-' + dateArray[0] + '-' + dateArray[1];
+}
+
 window.onload = () => {
-  // Select elements
-  // inputs
   var inputName = document.querySelector("#name");
   var inputSurname = document.querySelector("#surname");
   var inputID = document.querySelector("#id");
@@ -12,13 +19,12 @@ window.onload = () => {
   var inputEmail = document.querySelector("#email");
   var inputPassword = document.querySelector("#password");
   var inputRPassword = document.querySelector("#rPassword");
-  // all inputs array
   var allInputs = document.querySelectorAll("input");
-
-  // button
   var buttonSignUp = document.querySelector("#sign-up-button");
 
-  // Add events listeners
+  // const modal = document.getElementById("myModal");
+  // const modalClose = document.getElementById("modal-close");
+
   allInputs.forEach((input) => {
     input.addEventListener("focus", removeError);
   });
@@ -33,10 +39,31 @@ window.onload = () => {
   inputEmail.addEventListener("blur", validateEmail);
   inputPassword.addEventListener("blur", validatePassword);
   inputRPassword.addEventListener("blur", validateRPassword);
-
   buttonSignUp.addEventListener("click", handleSignUp);
 
-  // Functions
+  function saveUserToLocalStorage(userData) {
+    localStorage.setItem('userData', JSON.stringify(userData));
+  }
+  function deleteUserLocalStorage() {
+    localStorage.removeItem('userData');
+  }
+  function serFormFromLocalStorage() {
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    if (userData) {
+      userData.name ? inputName.value = userData.name : inputName.value = '';
+      userData.lastName ? inputSurname.value = userData.lastName : inputSurname.value = '';
+      userData.dni ? inputID.value = userData.dni : inputID.value = '';
+      userData.phone ? inputPhone.value = userData.phone : inputPhone.value = '';
+      userData.dob ? inputBirth.value = formatDateFromApi(userData.dob) : inputBirth.value = '';
+      userData.address ? inputAddress.value = userData.address : inputAddress.value = '';
+      userData.city ? inputCity.value = userData.city : inputCity.value = '';
+      userData.zip ? inputZipcode.value = userData.zip : inputZipcode.value = '';
+      userData.email ? inputEmail.value = userData.email : inputEmail.value = '';
+      userData.password ? inputPassword.value = userData.password : inputPassword.value = '';
+    }
+  }
+  serFormFromLocalStorage();
+
   function handleSignUp(e) {
     e.preventDefault();
     if (errors.length == 0) {
