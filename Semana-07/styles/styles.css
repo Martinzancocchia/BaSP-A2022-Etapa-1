@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  text-decoration-color: none;
+}
+
+.flex-conteiner {
+  display: flex;
+  height: 100%;
+}
+
+.main-footer-conteiner{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+body{
+  
+  overflow: hidden;
+  height: 100vh;
+}
+
+aside {
+  display: none;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .links-company,
+  .links-support,
+  .links-products {
+    max-width: 33%;
+  }
+
+  .Trackgenix-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .Trackgenix .t1 {
+    width: 40%;
+    padding-right: 20px;
+  }
+
+  .Trackgenix .t2 {
+    width: 60%;
+  }
+
+  .Trackgenix .learn-more {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  aside {
+    display: initial;
+  }
+
+
+  /* main {
+    margin-left: 20%;
+  } */
+
+  .burger-menu {
+    display: none;
+  }
+
+  .Trackgenix-conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .Trackgenix .t1 {
+    width: 40%;
+    padding-right: 20px;
+  }
+
+  .Trackgenix .t2 {
+    width: 60%;
+  }
+
+  .Trackgenix .learn-more {
+    margin-top: 20px;
+  }
+
+  .about .about-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .about p {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,274 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 130px 32px 0 32px;
+  background-color: #ffffff;
+}
+
+.Trackgenix {
+  flex-direction: column;
+  width: 100%;
+  margin: 26px 0 50px 0;
+  padding: 50px 0 50px 0;
+  border-top: 3px solid #373867;
+  border-bottom: 3px solid #373867;
+}
+
+.Trackgenix h2 {
+  padding: 6px 0 0 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #373867;
+}
+
+.Trackgenix h3 {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 20px 0 0 0;
+
+  color: #373867;
+}
+
+.Trackgenix p {
+  margin: 9px 0 0 0;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #373867;
+}
+
+.Trackgenix .img-1 {
+  margin: 10px 0 0 0;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.Trackgenix .learn-more {
+  width: 147px;
+  height: 47px;
+  margin-right: 8px;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  order: 2;
+}
+
+.Trackgenix .learn-more:hover {
+  background-color: #aace9b;
+  color: #ffffff;
+}
+
+.features-section {
+  padding-bottom: 50px;
+  border-bottom: 3px solid #373867;
+}
+
+.features-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.features-conteiner .block {
+  width: 330px;
+  margin: 0 0 35px 0;
+}
+
+.features-conteiner h3 {
+  padding: 0 10px 10px 70px;
+  color: black;
+}
+
+.features-conteiner img {
+  margin-bottom: -45px;
+}
+
+.features-conteiner p {
+  margin: 0 0 0 70px;
+  font-size: 14px;
+  font-weight: 400px;
+  color: #373867;
+}
+.specs-section {
+  padding: 50px 0 50px 0;
+  border-bottom: 3px solid #373867;
+}
+.specs-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-grow: 100;
+}
+
+.specs-conteiner .specs {
+  width: 330px;
+  padding: 0 0 35px 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #373867;
+}
+
+.specs-section h2 {
+  width: 315px;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 0 0 7px 0;
+  border-bottom: 3px solid #373867;
+
+  color: #373867;
+}
+
+.specs-conteiner h3 {
+  margin: 50px 0 0 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #41426f;
+  width: 310px;
+}
+
+.specs-conteiner p {
+  margin: 26px 0 0 50px;
+  font-size: 20px;
+  color: #373867;
+}
+
+.specs-conteiner img {
+  margin: 0 0 -84px 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 25px auto;
+  padding: 20px;
+  background-color: #aace9b;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #41426f;
+  border-bottom: 3px solid #373867;
+}
+
+.contact-form select,
+input,
+#summit {
+  width: 100%;
+  margin: 0 0 10px 0;
+  height: 37px;
+  background-color: #aace9b;
+  border: 1px solid #41426f;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #41426f;
+}
+
+.contact-form textarea {
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  height: 60px;
+  background-color: #aace9b;
+  border: 1px solid #41426f;
+  border-radius: 4px;
+}
+
+.contact-form #summit:hover {
+  background-color: #41426f;
+  color: #ffffff;
+}
+
+.about {
+  padding-bottom: 50px;
+  padding-top: 30px;
+  border-top: 3px solid #373867;
+  border-bottom: 3px solid #373867;
+}
+
+.about-1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.about-1 p {
+  width: 35%;
+  font-size: 20px;
+  line-height: 30px;
+  color: #373867;
+}
+
+.about h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 30px;
+
+  font-weight: 700;
+  color: #373867;
+}
+
+.about img {
+  width: 60%;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.about-2 {
+  color: #373867;
+  font-size: 20px;
+}
+
+.links {
+  padding: 50px 0 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.links-products,
+.links-company,
+.links-support {
+  width: 420px;
+  padding: 0 22px 0 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 10;
+}
+
+.links h3 {
+  border-bottom: 3px solid #373867;
+  padding-bottom: 5px;
+  margin: 10px 0 0 0;
+  font-size: 35px;
+  font-weight: bold;
+  color: #41426f;
+}
+
+.links ol {
+  margin-left: 25px;
+}
+
+.links li {
+  margin-bottom: 30px;
+}
+
+.links li a {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 4;
+  color: #41426f;
+}
+
+.items {
+  margin: -10px;
+}
+

@@ -1,0 +1,24 @@
+.form-section form input:focus {
+    outline: none;
+}
+
+/* Events clases */
+.form-section form input.error {
+    border: 1px solid #e74c3c;
+}
+
+.form-section form input.valid {
+    border: 1px solid #2ecc71;
+}
+
+.errorMessage {
+    color: #e74c3c;
+    padding-left: 10px;
+}
+
+.container i {
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+}

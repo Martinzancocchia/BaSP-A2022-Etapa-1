@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+a{
+  color: #ffffff;
+}
+
+.sign-up {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.sign-up main {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 140px;
+  overflow-y: scroll;
+}
+
+.sign-up main section {
+  width: 100%;
+  max-width: 1050px;
+  height: fit-content;
+  padding: 30px 40px;
+  margin-bottom: 40px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  background-image: url(../assets/img/image\ 2dd.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
+}
+
+.sign-up main section h3 {
+  display: block;
+  justify-content: flex-start;
+  max-width: 311px;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #41426f;
+  border-bottom: 2px solid #41426f;
+}
+
+.sign-up form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.sign-up .container {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.sign-up .container div {
+  width: 300px;
+  padding-bottom: 12px;
+}
+
+.sign-up form input {
+  border: 2px solid #f0f0f0;
+  border-radius: 20px;
+  display: block;
+  font-size: 14px;
+  padding: 12px;
+  width: 100%;
+}
+
+.sign-up form input.error {
+  margin-bottom: 8px;
+}
+
+.sign-up form label {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.078px;
+  color: #373867;
+  padding-left: 10px;
+}
+
+.sign-up .input-checkbox {
+  margin: 24px 0;
+  color: #000;
+}
+
+.login-buttons-div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-buttons-div button {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  height: 64px;
+  margin: auto 10px auto 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-buttons-div .back-btn {
+  background-color: #49a37b;
+}
+
+.login-buttons-div .sign-up-button {
+  background-color: #41426f;
+}
+
+.login-buttons-div .btn:hover {
+  color: #41426f;
+  background: #ffffff;
+}
+
+.sign-up form input:focus {
+  outline: none;
+}
+
+/* Events clases */
+.sign-up form input.error {
+  border: 1px solid #e74c3c;
+}
+
+.sign-up form input.valid {
+  border: 1px solid #2ecc71;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  padding-left: 10px;
+}
+
+.container i {
+  visibility: hidden;
+  position: absolute;
+  top: 45px;
+  right: 10px;
+}
