@@ -63,20 +63,20 @@ window.onload = function () {
   }
 
   function setErrorFor(input, message) {
-    let formControl = input.parentElement;
-    let small = formControl.querySelector("small");
+    var formControl = input.parentElement;
+    var small = formControl.querySelector("small");
     formControl.className = "form-control error";
     small.innerText = message;
   }
 
   function setSuccessFor(input) {
-    let formControl = input.parentElement;
+    var formControl = input.parentElement;
     formControl.className = "form-control success";
   }
 
   function checkNumbersAndLetters(str) {
-    let hasNumber = false;
-    let hasLetter = false;
+    var hasNumber = false;
+    var hasLetter = false;
     for (let i = 0; i < str.length; i++) {
       if (parseFloat(str.charAt(i))) {
         hasNumber = true;
@@ -92,8 +92,6 @@ window.onload = function () {
     }
   }
 
-  console.log(checkNumbersAndLetters("dsadsadsadaP8"));
-
   function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
       email
@@ -103,7 +101,7 @@ window.onload = function () {
   function checkInputs() { }
 
   email.onblur = function () {
-    let emailValue = email.value.trim();
+    var emailValue = email.value.trim();
     if (emailValue === "") {
       setErrorFor(email, "Email cannot be blank");
     } else if (!isEmail(emailValue)) {
@@ -114,7 +112,7 @@ window.onload = function () {
   };
 
   password.onblur = function () {
-    let passwordValue = password.value.trim();
+    var passwordValue = password.value.trim();
     if (passwordValue === "") {
       setErrorFor(password, "Password cannot be blank");
     } else if (passwordValue.length < 8) {
