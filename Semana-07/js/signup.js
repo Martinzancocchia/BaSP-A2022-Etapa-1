@@ -26,7 +26,7 @@ window.onload = () => {
 
   var modal = document.getElementById("myModal");
   var modalClose = document.getElementById("modal-close");
-
+  var errors = []; //errors array
   // Add events listeners
   allInputs.forEach((input) => {
     input.addEventListener("focus", removeError);
@@ -113,7 +113,7 @@ window.onload = () => {
     }
   }
 
-  async function fetchSignup(url, name, surname, id, phone, dob, address, city, zipcode, email, password) {
+  function fetchSignup(url, name, surname, id, phone, dob, address, city, zipcode, email, password) {
     var data = {
       name: name,
       lastName: surname,
@@ -139,7 +139,7 @@ window.onload = () => {
       .catch(err => err);
   }
 
-  var errors = []; //errors array
+ 
 
   function createError(input) {
     console.log("errors", errors);

@@ -9,12 +9,25 @@
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/styles.css">
         <link rel="stylesheet" href="../styles/login.css">
+        <link rel="stylesheet" href="../styles/modal.css">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <script src="../js/login.js"></script>
+        
+
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <title>Trackgenix - Log In</title>
     </head>
     <body>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 id="modal-title"></h2>
+                <span id="modal-close"></span>
+              </div>
+              <div id="modal-text" class="modal-text">
+              </div>
+            </div>
+          </div>
         <header>
             <h1>Trackgenix</h1>
             <div class="burger-menu">
@@ -54,5 +67,7 @@
             </form>
         </div>
         </main>
+        <script src="../js/login.js"></script>
+        <script src="../js/modal.js"></script>
     </body>
 </html>

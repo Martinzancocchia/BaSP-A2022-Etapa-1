@@ -2,18 +2,63 @@ window.onload = function () {
   var form = document.getElementById("form");
   var email = document.getElementById("email");
   var password = document.getElementById("password");
-  var alertMessage;
+  var modal = document.getElementById("myModal");
+  var modalClose = document.getElementById("modal-close");
   // var allInputs = document.querySelectorAll("input");
+  modalClose.onclick = function () {
+    closeModal();
+  }
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     var emailValue = email.value;
     var passwordValue = password.value;
-    alert(`email: ${emailValue}\npassword: ${passwordValue}`);
+    handleLogIn(emailValue, passwordValue)
 
-    checkInputs();
+    //checkInputs();
   });
+
+  function fetchLogin(url, email, password) {
+    var data = {
+      email: email,
+      password: password,
+    };
+    var queryParams = new URLSearchParams(data);
+
+    // returns promise
+    return fetch(`${url}${queryParams}`)
+      .then(res => {
+        return res.json();
+      })
+      .then(res => {
+        return res;
+      })
+      .catch(err => err);
+  }
+
+  function handleLogIn(email, password) {
+
+    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login?';
+
+    var data = fetchLogin(
+      url,
+      email,
+      password,)
+      .then(data => {
+        if (data.success) {
+          showModal("Success", data, true);
+        } else {
+          showModal("Error", data, false);
+        }
+      })
+
+  }
 
   function setErrorFor(input, message) {
     let formControl = input.parentElement;
@@ -53,7 +98,7 @@ window.onload = function () {
     );
   }
 
-  function checkInputs() {}
+  function checkInputs() { }
 
   email.onblur = function () {
     let emailValue = email.value.trim();
@@ -79,38 +124,4 @@ window.onload = function () {
       setErrorFor(password, "At least one capital letter and one number");
     }
   };
-
-  function showValidationsContent(event) {
-    event.preventDefault();
-    alertMessage = emailValue + passwordValue;
-    submitInfo();
-  }
-
-  function submitInfo() {
-    if (allValidated()) {
-      fetch(
-        "https://basp-m2022-api-rest-server.herokuapp.com/login?email=" +
-          email.value +
-          "&password=" +
-          password.value
-      )
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          if (data.success) {
-            console.log(data);
-            var correctAlert = data.msg + "\n" + alertMessage;
-            alert(correctAlert);
-          } else {
-            throw Error;
-          }
-        })
-        .catch(function () {
-          alert("user not found");
-        });
-    } else {
-      alert("Request rejected \n" + alertMessage);
-    }
-  }
-};
+}
