@@ -33,13 +33,15 @@ window.onload = function () {
 
     // returns promise
     return fetch(`${url}${queryParams}`)
-      .then(res => {
+      .then(function (res) {
         return res.json();
       })
-      .then(res => {
+      .then(function (res) {
         return res;
       })
-      .catch(err => err);
+      .catch(function (err){
+        return err;
+      });
   }
 
   function handleLogIn(email, password) {
@@ -50,7 +52,7 @@ window.onload = function () {
       url,
       email,
       password,)
-      .then(data => {
+      .then(function (data) {
         if (data.success) {
           showModal("Success", data, true);
         } else {
