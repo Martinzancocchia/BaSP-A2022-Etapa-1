@@ -83,7 +83,7 @@ window.onload = () => {
   }
 
   function handleSignUp() {
-    console.log("dsadsad")
+
     var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?';
 
     var data = fetchSignup(

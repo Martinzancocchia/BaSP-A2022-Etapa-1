@@ -14,15 +14,17 @@ window.onload = function () {
     }
   }
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+  form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    var emailValue = email.value;
-    var passwordValue = password.value;
-    handleLogIn(emailValue, passwordValue)
+      var emailValue = email.value;
+      var passwordValue = password.value;
+      handleLogIn(emailValue, passwordValue);
+      email.onblur();
+      password.onblur();
 
-    //checkInputs();
-  });
+      //checkInputs();
+    });
 
   function fetchLogin(url, email, password) {
     var data = {
