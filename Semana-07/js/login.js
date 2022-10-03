@@ -1,9 +1,9 @@
 window.onload = function () {
-  let form = document.getElementById("form");
-  let email = document.getElementById("email");
-  let password = document.getElementById("password");
+  var form = document.getElementById("form");
+  var email = document.getElementById("email");
+  var password = document.getElementById("password");
+  var alertMessage;
   // var allInputs = document.querySelectorAll("input");
-
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -13,19 +13,7 @@ window.onload = function () {
     alert(`email: ${emailValue}\npassword: ${passwordValue}`);
 
     checkInputs();
-
   });
-
-  // allInputs.forEach((input) => {
-  //   input.addEventListener("focus", removeError);
-  // });
-
-  // function LoginInfo() {
-  //   e.preventDefault();
-  //   var email = email.value;
-  //   var password = password.value;
-  //   alert('email: ' + email + '\n' + 'password: ' + password);
-  // }
 
   function setErrorFor(input, message) {
     let formControl = input.parentElement;
@@ -65,20 +53,7 @@ window.onload = function () {
     );
   }
 
-  function checkInputs() {
-    // trim to remove the whitespaces
-    // let emailValue = email.value.trim();
-    // let passwordValue = password.value.trim();
-    // if (passwordValue === "") {
-    //   setErrorFor(password, "Password cannot be blank");
-    // } else if (passwordValue.length < 8) {
-    //   setErrorFor(password, "The password is to short");
-    // } else if (checkNumbersAndLetters(password.value)) {
-    //   setSuccessFor(password);
-    // } else {
-    //   setErrorFor(password, "At least one capital letter and one number");
-    // }
-  }
+  function checkInputs() {}
 
   email.onblur = function () {
     let emailValue = email.value.trim();
@@ -104,26 +79,38 @@ window.onload = function () {
       setErrorFor(password, "At least one capital letter and one number");
     }
   };
+
+  function showValidationsContent(event) {
+    event.preventDefault();
+    alertMessage = emailValue + passwordValue;
+    submitInfo();
+  }
+
+  function submitInfo() {
+    if (allValidated()) {
+      fetch(
+        "https://basp-m2022-api-rest-server.herokuapp.com/login?email=" +
+          email.value +
+          "&password=" +
+          password.value
+      )
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          if (data.success) {
+            console.log(data);
+            var correctAlert = data.msg + "\n" + alertMessage;
+            alert(correctAlert);
+          } else {
+            throw Error;
+          }
+        })
+        .catch(function () {
+          alert("user not found");
+        });
+    } else {
+      alert("Request rejected \n" + alertMessage);
+    }
+  }
 };
-
-// function removeError(e) {
-//   var input = e.currentTarget;
-//   // remove error class
-//   input.classList.remove("form-control error");
-//   input.parentNode.classList.remove("form-control error");
-
-//   // remove error message if exist
-//   var errorElement = input.parentElement.querySelector(
-//     `#error-${input.name}`
-//   );
-//   if (errorElement) {
-//     errorElement.remove();
-//   }
-//   // remove error from array
-//   for (var i = 0; i < errors.length; i++) {
-//     if (errors[i] == `The ${input.name} is not valid`) {
-//       errors.splice(i, 1);
-//       i--;
-//     }
-//   }
-// }
