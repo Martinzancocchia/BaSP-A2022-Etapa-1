@@ -82,33 +82,6 @@ window.onload = () => {
       });
   }
 
-  function handleSignUp() {
-
-    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?';
-
-    var data = fetchSignup(
-      url,
-      inputName.value,
-      inputSurname.value,
-      inputID.value,
-      inputPhone.value,
-      inputBirth.value,
-      inputAddress.value,
-      inputCity.value,
-      inputZipcode.value,
-      inputEmail.value,
-      inputPassword.value,
-      inputRPassword.value)
-      .then(data => {
-        if (data.success) {
-          showModal("Success", data, true);
-        } else {
-          showModal("Error", data, false);
-        }
-      })
-
-  }
-
   function saveUserToLocalStorage(userData) {
     localStorage.setItem('userData', JSON.stringify(userData));
   }
@@ -131,6 +104,39 @@ window.onload = () => {
     }
   }
   serFormFromLocalStorage();
+
+  async function handleSignUp(e) {
+    e.preventDefault();
+
+    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?';
+    var data = {
+      errors: [{ msg: '' }, { msg: '' }],
+      msg: "",
+    };
+    if (errors.length === 0) {
+      data = fetchSignup(
+        url,
+        inputName.value,
+        inputSurname.value,
+        inputID.value,
+        inputPhone.value,
+        inputBirth.value,
+        inputAddress.value,
+        inputCity.value,
+        inputZipcode.value,
+        inputEmail.value,
+        inputPassword.value,
+        inputRPassword.value)
+        .then(data => {
+          if (data.success) {
+            showModal("Signed Up", data, true);
+            saveUserToLocalStorage(data.data)
+          } else {
+            showModal('Error', data, false)
+          }
+        })
+    }
+  }
 
   function fetchSignup(url, name, surname, id, phone, dob, address, city, zipcode, email, password) {
     var data = {
